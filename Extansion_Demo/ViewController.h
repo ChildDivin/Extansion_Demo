@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+{
+    IBOutlet UILabel *lblLable;
+    IBOutlet UITableView *tableView;
+    IBOutlet UITextField *textField;
+}
 
 @end
 

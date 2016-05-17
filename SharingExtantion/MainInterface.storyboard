@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="j1y-V4-xli">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Share View Controller-->
+        <scene sceneID="ceB-am-kn3">
+            <objects>
+                <viewController id="j1y-V4-xli" customClass="ShareViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8bI-gs-bmD"/>
+                        <viewControllerLayoutGuide type="bottom" id="d5i-Ba-RvD"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="wbc-yd-nQP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIo-yA-W6i">
+                                <rect key="frame" x="0.0" y="61" width="320" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHT-nn-BMj">
+                                        <rect key="frame" x="8" y="8" width="50" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="FM7-fV-12F"/>
+                                            <constraint firstAttribute="width" constant="50" id="fSo-W2-Roe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnCancelClick:" destination="j1y-V4-xli" eventType="touchUpInside" id="K2d-Tq-2QT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSZ-0S-LE2">
+                                        <rect key="frame" x="262" y="8" width="50" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="AbU-vX-faR"/>
+                                            <constraint firstAttribute="height" constant="30" id="dj6-o1-XHz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                                        <state key="normal" title="Done">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnDoneClick:" destination="j1y-V4-xli" eventType="touchUpInside" id="oFI-RZ-fDp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.43254201450000002" green="0.76237111589999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Au0-V1-uri"/>
+                                    <constraint firstItem="tHT-nn-BMj" firstAttribute="baseline" secondItem="BSZ-0S-LE2" secondAttribute="baseline" id="DPb-Bs-YJA"/>
+                                    <constraint firstItem="tHT-nn-BMj" firstAttribute="leading" secondItem="zIo-yA-W6i" secondAttribute="leadingMargin" id="Hrb-fT-k0V"/>
+                                    <constraint firstItem="BSZ-0S-LE2" firstAttribute="trailing" secondItem="zIo-yA-W6i" secondAttribute="trailingMargin" id="aR7-j2-ToG"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="qtE-yF-qzX"/>
+                                    <constraint firstItem="tHT-nn-BMj" firstAttribute="top" secondItem="zIo-yA-W6i" secondAttribute="topMargin" id="zYl-Xm-qyd"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xxy-De-iUe">
+                                <rect key="frame" x="40" y="138" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="a0o-9w-Aw2"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zIo-yA-W6i" secondAttribute="trailing" id="HVa-4x-s2Y"/>
+                            <constraint firstItem="zIo-yA-W6i" firstAttribute="leading" secondItem="wbc-yd-nQP" secondAttribute="leading" id="Vcw-md-3he"/>
+                            <constraint firstItem="xxy-De-iUe" firstAttribute="top" secondItem="zIo-yA-W6i" secondAttribute="bottom" constant="35" id="ntA-JW-WbZ"/>
+                            <constraint firstItem="xxy-De-iUe" firstAttribute="leading" secondItem="wbc-yd-nQP" secondAttribute="leadingMargin" constant="24" id="qSc-Ni-tQt"/>
+                            <constraint firstItem="zIo-yA-W6i" firstAttribute="top" secondItem="8bI-gs-bmD" secondAttribute="bottom" constant="41" id="qeQ-Ei-doP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xxy-De-iUe" secondAttribute="trailing" constant="24" id="tEl-Dc-oai"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                    <connections>
+                        <outlet property="imageDisplay" destination="xxy-De-iUe" id="rpr-eT-Cf6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEy-Cv-SGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72" y="-29"/>
+        </scene>
+    </scenes>
+</document>

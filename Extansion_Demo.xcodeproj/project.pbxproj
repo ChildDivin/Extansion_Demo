@@ -14,6 +14,18 @@
 		E755E2F81B6634A70035635D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E755E2F71B6634A70035635D /* Images.xcassets */; };
 		E755E2FB1B6634A70035635D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E755E2F91B6634A70035635D /* LaunchScreen.xib */; };
 		E755E3071B6634A70035635D /* Extansion_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E755E3061B6634A70035635D /* Extansion_DemoTests.m */; };
+		E755E3171B6634BD0035635D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E755E3161B6634BD0035635D /* NotificationCenter.framework */; };
+		E755E31D1B6634BD0035635D /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E755E31C1B6634BD0035635D /* TodayViewController.m */; };
+		E755E31F1B6634BD0035635D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E755E31E1B6634BD0035635D /* MainInterface.storyboard */; };
+		E755E3221B6634BD0035635D /* Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E755E3141B6634BD0035635D /* Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E77914281B689B6F00C8CB19 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E77914271B689B6F00C8CB19 /* ShareViewController.m */; };
+		E779142A1B689B6F00C8CB19 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77914291B689B6F00C8CB19 /* MainInterface.storyboard */; };
+		E779142D1B689B6F00C8CB19 /* SharingExtantion.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E77914221B689B6F00C8CB19 /* SharingExtantion.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E77914331B68AEAF00C8CB19 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77914321B68AEAF00C8CB19 /* CoreLocation.framework */; };
+		E7A615F01B6A4891009FAC56 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A615EF1B6A4891009FAC56 /* KeyboardViewController.m */; };
+		E7A615F31B6A4891009FAC56 /* MyKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E7A615EA1B6A4891009FAC56 /* MyKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E7A615F81B6A4973009FAC56 /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A615F71B6A4973009FAC56 /* KeyboardViewController.xib */; };
+		E7A615FA1B6A4FB5009FAC56 /* 4_babies_scrap-143.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7A615F91B6A4FB5009FAC56 /* 4_babies_scrap-143.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +36,44 @@
 			remoteGlobalIDString = E755E2E61B6634A70035635D;
 			remoteInfo = Extansion_Demo;
 		};
+		E755E3201B6634BD0035635D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E755E2DF1B6634A70035635D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E755E3131B6634BD0035635D;
+			remoteInfo = Today;
+		};
+		E779142B1B689B6F00C8CB19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E755E2DF1B6634A70035635D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E77914211B689B6F00C8CB19;
+			remoteInfo = SharingExtantion;
+		};
+		E7A615F11B6A4891009FAC56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E755E2DF1B6634A70035635D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7A615E91B6A4891009FAC56;
+			remoteInfo = MyKeyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E755E3261B6634BD0035635D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E7A615F31B6A4891009FAC56 /* MyKeyboard.appex in Embed App Extensions */,
+				E779142D1B689B6F00C8CB19 /* SharingExtantion.appex in Embed App Extensions */,
+				E755E3221B6634BD0035635D /* Today.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E755E2E71B6634A70035635D /* Extansion_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Extansion_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +89,27 @@
 		E755E3001B6634A70035635D /* Extansion_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Extansion_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E755E3051B6634A70035635D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E755E3061B6634A70035635D /* Extansion_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Extansion_DemoTests.m; sourceTree = "<group>"; };
+		E755E3141B6634BD0035635D /* Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Today.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E755E3161B6634BD0035635D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		E755E31A1B6634BD0035635D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E755E31B1B6634BD0035635D /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		E755E31C1B6634BD0035635D /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		E755E31E1B6634BD0035635D /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		E779141D1B68984C00C8CB19 /* Extansion_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Extansion_Demo.entitlements; sourceTree = "<group>"; };
+		E77914221B689B6F00C8CB19 /* SharingExtantion.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SharingExtantion.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E77914251B689B6F00C8CB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E77914261B689B6F00C8CB19 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		E77914271B689B6F00C8CB19 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		E77914291B689B6F00C8CB19 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		E77914311B68A3D100C8CB19 /* Today.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Today.entitlements; sourceTree = "<group>"; };
+		E77914321B68AEAF00C8CB19 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E77914341B68BA4E00C8CB19 /* SharingExtantion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SharingExtantion.entitlements; sourceTree = "<group>"; };
+		E7A615EA1B6A4891009FAC56 /* MyKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A615ED1B6A4891009FAC56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7A615EE1B6A4891009FAC56 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		E7A615EF1B6A4891009FAC56 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		E7A615F71B6A4973009FAC56 /* KeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
+		E7A615F91B6A4FB5009FAC56 /* 4_babies_scrap-143.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "4_babies_scrap-143.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +127,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E755E3111B6634BD0035635D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77914331B68AEAF00C8CB19 /* CoreLocation.framework in Frameworks */,
+				E755E3171B6634BD0035635D /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E779141F1B689B6F00C8CB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A615E71B6A4891009FAC56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +158,10 @@
 			children = (
 				E755E2E91B6634A70035635D /* Extansion_Demo */,
 				E755E3031B6634A70035635D /* Extansion_DemoTests */,
+				E755E3181B6634BD0035635D /* Today */,
+				E77914231B689B6F00C8CB19 /* SharingExtantion */,
+				E7A615EB1B6A4891009FAC56 /* MyKeyboard */,
+				E755E3151B6634BD0035635D /* Frameworks */,
 				E755E2E81B6634A70035635D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +171,9 @@
 			children = (
 				E755E2E71B6634A70035635D /* Extansion_Demo.app */,
 				E755E3001B6634A70035635D /* Extansion_DemoTests.xctest */,
+				E755E3141B6634BD0035635D /* Today.appex */,
+				E77914221B689B6F00C8CB19 /* SharingExtantion.appex */,
+				E7A615EA1B6A4891009FAC56 /* MyKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +181,7 @@
 		E755E2E91B6634A70035635D /* Extansion_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				E779141D1B68984C00C8CB19 /* Extansion_Demo.entitlements */,
 				E755E2EE1B6634A70035635D /* AppDelegate.h */,
 				E755E2EF1B6634A70035635D /* AppDelegate.m */,
 				E755E2F11B6634A70035635D /* ViewController.h */,
@@ -119,6 +220,75 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E755E3151B6634BD0035635D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E77914321B68AEAF00C8CB19 /* CoreLocation.framework */,
+				E755E3161B6634BD0035635D /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E755E3181B6634BD0035635D /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				E77914311B68A3D100C8CB19 /* Today.entitlements */,
+				E755E31B1B6634BD0035635D /* TodayViewController.h */,
+				E755E31C1B6634BD0035635D /* TodayViewController.m */,
+				E755E31E1B6634BD0035635D /* MainInterface.storyboard */,
+				E755E3191B6634BD0035635D /* Supporting Files */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		E755E3191B6634BD0035635D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E755E31A1B6634BD0035635D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E77914231B689B6F00C8CB19 /* SharingExtantion */ = {
+			isa = PBXGroup;
+			children = (
+				E77914341B68BA4E00C8CB19 /* SharingExtantion.entitlements */,
+				E77914261B689B6F00C8CB19 /* ShareViewController.h */,
+				E77914271B689B6F00C8CB19 /* ShareViewController.m */,
+				E77914291B689B6F00C8CB19 /* MainInterface.storyboard */,
+				E77914241B689B6F00C8CB19 /* Supporting Files */,
+			);
+			path = SharingExtantion;
+			sourceTree = "<group>";
+		};
+		E77914241B689B6F00C8CB19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E77914251B689B6F00C8CB19 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7A615EB1B6A4891009FAC56 /* MyKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E7A615F91B6A4FB5009FAC56 /* 4_babies_scrap-143.jpg */,
+				E7A615EE1B6A4891009FAC56 /* KeyboardViewController.h */,
+				E7A615EF1B6A4891009FAC56 /* KeyboardViewController.m */,
+				E7A615F71B6A4973009FAC56 /* KeyboardViewController.xib */,
+				E7A615EC1B6A4891009FAC56 /* Supporting Files */,
+			);
+			path = MyKeyboard;
+			sourceTree = "<group>";
+		};
+		E7A615EC1B6A4891009FAC56 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7A615ED1B6A4891009FAC56 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +299,14 @@
 				E755E2E31B6634A70035635D /* Sources */,
 				E755E2E41B6634A70035635D /* Frameworks */,
 				E755E2E51B6634A70035635D /* Resources */,
+				E755E3261B6634BD0035635D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E755E3211B6634BD0035635D /* PBXTargetDependency */,
+				E779142C1B689B6F00C8CB19 /* PBXTargetDependency */,
+				E7A615F21B6A4891009FAC56 /* PBXTargetDependency */,
 			);
 			name = Extansion_Demo;
 			productName = Extansion_Demo;
@@ -157,6 +331,57 @@
 			productReference = E755E3001B6634A70035635D /* Extansion_DemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E755E3131B6634BD0035635D /* Today */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E755E3231B6634BD0035635D /* Build configuration list for PBXNativeTarget "Today" */;
+			buildPhases = (
+				E755E3101B6634BD0035635D /* Sources */,
+				E755E3111B6634BD0035635D /* Frameworks */,
+				E755E3121B6634BD0035635D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Today;
+			productName = Today;
+			productReference = E755E3141B6634BD0035635D /* Today.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E77914211B689B6F00C8CB19 /* SharingExtantion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E779142E1B689B6F00C8CB19 /* Build configuration list for PBXNativeTarget "SharingExtantion" */;
+			buildPhases = (
+				E779141E1B689B6F00C8CB19 /* Sources */,
+				E779141F1B689B6F00C8CB19 /* Frameworks */,
+				E77914201B689B6F00C8CB19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharingExtantion;
+			productName = SharingExtantion;
+			productReference = E77914221B689B6F00C8CB19 /* SharingExtantion.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E7A615E91B6A4891009FAC56 /* MyKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A615F61B6A4891009FAC56 /* Build configuration list for PBXNativeTarget "MyKeyboard" */;
+			buildPhases = (
+				E7A615E61B6A4891009FAC56 /* Sources */,
+				E7A615E71B6A4891009FAC56 /* Frameworks */,
+				E7A615E81B6A4891009FAC56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyKeyboard;
+			productName = MyKeyboard;
+			productReference = E7A615EA1B6A4891009FAC56 /* MyKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +393,38 @@
 				TargetAttributes = {
 					E755E2E61B6634A70035635D = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = H459CHC794;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					E755E2FF1B6634A70035635D = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = E755E2E61B6634A70035635D;
+					};
+					E755E3131B6634BD0035635D = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = H459CHC794;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					E77914211B689B6F00C8CB19 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = H459CHC794;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					E7A615E91B6A4891009FAC56 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = H459CHC794;
 					};
 				};
 			};
@@ -190,6 +443,9 @@
 			targets = (
 				E755E2E61B6634A70035635D /* Extansion_Demo */,
 				E755E2FF1B6634A70035635D /* Extansion_DemoTests */,
+				E755E3131B6634BD0035635D /* Today */,
+				E77914211B689B6F00C8CB19 /* SharingExtantion */,
+				E7A615E91B6A4891009FAC56 /* MyKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +465,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E755E3121B6634BD0035635D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E755E31F1B6634BD0035635D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E77914201B689B6F00C8CB19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E779142A1B689B6F00C8CB19 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A615E81B6A4891009FAC56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A615F81B6A4973009FAC56 /* KeyboardViewController.xib in Resources */,
+				E7A615FA1B6A4FB5009FAC56 /* 4_babies_scrap-143.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +514,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E755E3101B6634BD0035635D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E755E31D1B6634BD0035635D /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E779141E1B689B6F00C8CB19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77914281B689B6F00C8CB19 /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A615E61B6A4891009FAC56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A615F01B6A4891009FAC56 /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +545,21 @@
 			isa = PBXTargetDependency;
 			target = E755E2E61B6634A70035635D /* Extansion_Demo */;
 			targetProxy = E755E3011B6634A70035635D /* PBXContainerItemProxy */;
+		};
+		E755E3211B6634BD0035635D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E755E3131B6634BD0035635D /* Today */;
+			targetProxy = E755E3201B6634BD0035635D /* PBXContainerItemProxy */;
+		};
+		E779142C1B689B6F00C8CB19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E77914211B689B6F00C8CB19 /* SharingExtantion */;
+			targetProxy = E779142B1B689B6F00C8CB19 /* PBXContainerItemProxy */;
+		};
+		E7A615F21B6A4891009FAC56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7A615E91B6A4891009FAC56 /* MyKeyboard */;
+			targetProxy = E7A615F11B6A4891009FAC56 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -347,9 +667,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Extansion_Demo/Extansion_Demo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Extansion_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -357,9 +681,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Extansion_Demo/Extansion_Demo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Extansion_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -397,6 +725,98 @@
 			};
 			name = Release;
 		};
+		E755E3241B6634BD0035635D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Today/Today.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Today/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E755E3251B6634BD0035635D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Today/Today.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Today/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E779142F1B689B6F00C8CB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SharingExtantion/SharingExtantion.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SharingExtantion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E77914301B689B6F00C8CB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SharingExtantion/SharingExtantion.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SharingExtantion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E7A615F41B6A4891009FAC56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E7A615F51B6A4891009FAC56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = MyKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,12 +836,40 @@
 				E755E30C1B6634A70035635D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E755E30D1B6634A70035635D /* Build configuration list for PBXNativeTarget "Extansion_DemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E755E30E1B6634A70035635D /* Debug */,
 				E755E30F1B6634A70035635D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E755E3231B6634BD0035635D /* Build configuration list for PBXNativeTarget "Today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E755E3241B6634BD0035635D /* Debug */,
+				E755E3251B6634BD0035635D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E779142E1B689B6F00C8CB19 /* Build configuration list for PBXNativeTarget "SharingExtantion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E779142F1B689B6F00C8CB19 /* Debug */,
+				E77914301B689B6F00C8CB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7A615F61B6A4891009FAC56 /* Build configuration list for PBXNativeTarget "MyKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A615F41B6A4891009FAC56 /* Debug */,
+				E7A615F51B6A4891009FAC56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

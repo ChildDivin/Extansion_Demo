@@ -17,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    NSUserDefaults *userdefault = [[NSUserDefaults standardUserDefaults] initWithSuiteName:@"group.shringData"];
+//    [userdefault setObject:@"hello" forKey:@"KeyName"];
+//    [userdefault setInteger:2 forKey:@"KeyValues"];
+//    [userdefault synchronize];
     return YES;
 }
 
